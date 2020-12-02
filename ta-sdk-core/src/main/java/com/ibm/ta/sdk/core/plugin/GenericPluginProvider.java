@@ -49,7 +49,7 @@ public abstract class GenericPluginProvider implements PluginProvider {
       throw new TAException("Command assess is not supported for plugin provider "+this.getClass()+
               "\n        No middleware specific issue json files found in plugin provider ");
     }
-    TaJsonFileValidator.validateIssue(getMiddleware() + "/" + FILE_ISSUES_JSON);
+    //TaJsonFileValidator.validateIssue(getMiddleware() + "/" + FILE_ISSUES_JSON);
     TaJsonFileValidator.validateComplexity(getMiddleware() + "/" + FILE_COMPLEXITIES_JSON);
     TaJsonFileValidator.validateTarget(getMiddleware() + "/" + FILE_TARGETS_JSON);
   }

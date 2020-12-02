@@ -392,6 +392,28 @@
           }
         }
       }
+    },
+    {
+      "id": "myNewIssue",
+      "title": "Test the customerized issue detecter",
+      "category": "security",
+      "issueOverhead": 2.0,
+      "occurrencesCost": 0.2,
+      "solutionText": ["Fix me"      ],
+      "severity": "potential",
+      "matchCriteria": {
+        "ruleType": "customizedDiff",
+        "criteria": {
+          "detectElement": {
+            "tags": "missingInSource"}
+        },
+        "occurrenceAttr": {
+          "missingItemName": {
+            "title": "The name of the missing item"
+          }
+        }
+      }
     }
+
   ]
 }

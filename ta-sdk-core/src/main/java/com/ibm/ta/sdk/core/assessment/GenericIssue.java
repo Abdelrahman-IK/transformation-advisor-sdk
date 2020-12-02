@@ -151,7 +151,7 @@ public class GenericIssue implements Issue {
     public String toString() {
         return "id=" + getId() + ", " +
                 "title=" + getTitle() + ", " +
-                "category=" + getCategory().getId() + ", " +
+               // "category=" + getCategory().getId() + ", " +
                 "severity=" + getSeverity() + ", " +
                 "cost=" + getCost() + ", " +
                 "overheadCost=" + getOverheadCost() + ", " +

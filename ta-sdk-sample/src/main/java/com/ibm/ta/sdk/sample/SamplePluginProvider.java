@@ -137,6 +137,9 @@ public class SamplePluginProvider extends GenericPluginProvider {
       assessmentConfigFiles.add(assessConfigJsonFile2);
       assessmentConfigFiles.add(assessConfigXmlFile);
       assessmentConfigFiles.add(assessConfigXmlFile2);
+      assessmentConfigFiles.add(Paths.get(SamplePluginProvider.class.getResource("/sampleData/CustIssueDetectData1.json").toURI()));
+      assessmentConfigFiles.add(Paths.get(SamplePluginProvider.class.getResource("/sampleData/CustIssueDetectData2.json").toURI()));
+
 
       // here is the example to add a specific file on file system to the config file list
       File assessConfigXmlFile3 = new File("/tmp/sample/sampleConfig/sampleConfigFile.json");
